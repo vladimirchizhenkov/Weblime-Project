@@ -230,7 +230,7 @@
 .feedback__title {
 	font-family: 'FiraSans Regular';
 	color: #fff;
-	font-size: 18px;
+	font-size: 21px;
 	text-align: center;
 	margin: 10px 0;
 }
@@ -241,7 +241,7 @@
 	font-size: 14px;
 	color: #414141;
 	line-height: 21px;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 10px 20px;
 	background-color: #fff;
 	outline: none;
@@ -251,7 +251,7 @@
 }
 
 .feedback-form__textarea {
-	border-radius: 10px;
+	border-radius: 5px;
 	text-align: left;
 	margin-bottom: 10px;
 	resize: none;
