@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Weblime Project: About me</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/basic.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+</head>
+<body>
+<div id="page-preloader" class="preloader">
+<div class="loader"></div>
+</div>
+<header class="main-header container-wide">
+<div class="main-header__wrapper container">
+<a href="index.html" class="author-link"><div class="author-title">
+<img src="img/author-card__photo.jpg" alt="Author Photo" class="author-title__photo">
+<span class="author-title__name">Анатолий Анатольев</span>
+</div>
+</a>
+<div class="my-contacts">
+<div class="my_contacts__title">
+Мои контакты
+<ul class="contacts__list">
+<li class="contacts__point">
+<a href="mailto:anatoly@mail.ru?subject=сотрудничество" class="contacts__link contacts__link_email">anatoly@mail.ru</a>
+</li>
+<li class="contacts__point">
+<a href="tel:+79873456212" class="contacts__link contacts__link_tel">+7 987 345 62 12</a>
+</li>
+<li class="contacts__point">
+<a href="skype:anatoly_" class="contacts__link contacts__link_skype">anatoly_</a>
+</li>
+<li class="contacts__point">
+<div class="feedback feedback_wrapper">
+<button type="button" class="feedback__button" value="Напишите мне" id="feedback__button">Напишите мне
+</button>
+<div class="feedback__window" id="feedback__window">
+<div class="feedback__content">
+<span class="feedback__close" id="feedback__close">
+&times;
+</span>
+<div class="feedback__block-wrapper">
+<img src="img/form__title.png" alt="form image" class="feedback__image">
+<div class="feedback__title">Давайте сотрудничать!
+</div>
+<form action="#" class="feedback-form" method="post">
+<input type="text" class="feedback-form__input" placeholder="Ваше имя">
+<div class="feedback-form__validation">Введите корректные данные</div>
+<input type="text" class="feedback-form__input"  placeholder="Ваш телефон">
+<div class="feedback-form__validation">Введите корректные данные</div>
+<textarea class="feedback-form__textarea" rows="5" placeholder="Ваш текст"></textarea>
+<input type="submit" class="feedback-form__input feedback-form__input_submit" value="Отправить заявку">
+</form>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>	
+</header>
+<section class="container-content container">
+<nav class="main-menu">
+<ul class="main-menu__list">
+<li class="main-menu__point"><a href="about_me.html" class="main-menu__link main-menu__link_about-me main-menu__link_active">Обо мне</a></li>
+<li class="main-menu__point"><a href="career.html" class="main-menu__link main-menu__link_career">Карьерный путь</a></li>
+<li class="main-menu__point"><a href="portfolio.html" class="main-menu__link main-menu__link_portfolio">Портфолио</a></li>
+</ul>
+</nav>
+<div class="main-photo">
+<img class="main-photo__image" src="img/about-me__main-photo.jpg" alt="main author photo">
+</div>
+<article class="about-me">
+<h2 class="main-title">Обо мне</h2>
+<p class="about-me__info">Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.</p>
+<a href="#" class="main-btn main-btn_red main-btn__wrapper_about-me">Скачать резюме</a>
+</article>
+</section>
+<footer class="main-footer container-wide">
+<div class="main-footer__wrapper container">
+<div class="confidentiality"><span class="confidentiality__span">&#169; </span>Конфиденциальность сайта</div>
+<div class="social">
+<ul class="social__list">
+<li class="social__point"><a href="#" class="social__link social__link_fb"></a></li><li class="social__point"><a href="#" class="social__link social__link_vk"></a></li><li class="social__point"><a href="#" class="social__link social__link_tw"></a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/modal-window.js"></script>
+</body>
+</html>
