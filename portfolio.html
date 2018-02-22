@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/basic.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
 </head>
 <body>
@@ -65,14 +66,14 @@
 </div>	
 </header>
 <section class="container-content container">
-<nav class="main-menu">
+<nav class="main-menu wow fadeInLeft" data-wow-delay="1.2s">
 <ul class="main-menu__list">
 <li class="main-menu__point"><a href="about_me.html" class="main-menu__link main-menu__link_about-me">Обо мне</a></li>
 <li class="main-menu__point"><a href="career.html" class="main-menu__link main-menu__link_career">Карьерный путь</a></li>
 <li class="main-menu__point"><a href="portfolio.html" class="main-menu__link main-menu__link_portfolio main-menu__link_active">Портфолио</a></li>
 </ul>
 </nav>
-<article class="my-projects my-projects_wrapper">
+<article class="my-projects my-projects_wrapper wow fadeIn" data-wow-delay="1.2s">
 <h2 class="main-title">Портфолио</h2>
 <div class="projects-box">
 <div class="project-card">
@@ -130,6 +131,9 @@
 </div>
 </footer>
 <script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 <script type="text/javascript" src="js/modal-window.js"></script>
 </body>
 </html>
