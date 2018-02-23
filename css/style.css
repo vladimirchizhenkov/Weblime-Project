@@ -10,13 +10,14 @@
 	margin: auto;
 }
 
-.author-card {
+.author-card { 
 	width: 300px;
 	text-align: center;
 	background-color: #fff;
 	border-radius: 10px;
 	position: relative;
 	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 .author-card__photo {
