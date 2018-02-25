@@ -8,6 +8,3 @@ document.body.onload = function() {
 		}
 	}, 1000);
 }
-
-// https://www.youtube.com/watch?v=PS9hc-MtBdQ&t=459s
-// Стилизация скролла
