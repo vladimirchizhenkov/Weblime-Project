@@ -124,9 +124,9 @@
 }
 
 .on-map__content {
-	background-color: #33c1e3;
+	background-color: #fff;
 	border-radius: 10px;
-	max-width: 80%;
+	width: 80%;
 	padding: 35px;
 	position: absolute;
 	min-height: 300px;
@@ -139,10 +139,17 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	color: #fff;
+	color: #414141;
 	transition: color, transform 0.2s;
 	font-size: 35px;
 	cursor: pointer;
+}
+
+.on-map__remote-partnership {
+	font-family: 'FiraSans Light';
+	font-size: 16px;
+	color: #727272;
+	line-height: 28px;
 }
 
 .on-map__close:hover {

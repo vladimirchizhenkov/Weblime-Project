@@ -1,17 +1,17 @@
- var modal = document.getElementById('feedback__window');
- var btn = document.getElementById("feedback__button");
- var span = document.getElementsByClassName("feedback__close")[0];
+ var modal_contacts = document.getElementById('feedback__window');
+ var btn_contacts = document.getElementById("feedback__button");
+ var span_contacts = document.getElementsByClassName("feedback__close")[0];
 
- btn.onclick = function () {
- 	modal.style.display = "block";
+ btn_contacts.onclick = function () {
+ 	modal_contacts.style.display = "block";
  }
- span.onclick = function () {
- 	modal.style.display = "none";
+ span_contacts.onclick = function () {
+ 	modal_contacts.style.display = "none";
  }
 
  window.onclick = function(event) {
- 	if (event.target == modal) {
- 		modal.style.display = "none";
+ 	if (event.target == modal_contacts) {
+ 		modal_contacts.style.display = "none";
  	}
  }
 
