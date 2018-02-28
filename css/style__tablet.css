@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	.container {
+	width: 100%;
+	max-width: 730px;
+}
+
+.container-content {
+	padding: 15px 0 20px 0;
+	justify-content: flex-start;
+}
+
+.main-menu {
+	flex-basis: 100%;
+	margin-bottom: 32px;
+}
+
+.main-menu__list {
+	display: flex;
+	max-width: 100%;
+}
+
+.main-menu__point {
+	margin-right: 30px;
+}
+
+.main-menu__link {
+	padding-right: 0;
+}
+
+.main-menu__link_active {
+    border: none;
+}
+
+.main-photo {
+	flex-basis: 250px;
+}
+
+.main-photo__image {
+	width: 170px;
+	margin-left: 35px;
+}
+
+}
