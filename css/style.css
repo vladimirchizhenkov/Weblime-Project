@@ -104,7 +104,8 @@
 	font-family: 'FontAwesome';
 	content: '\f041';
 	color: #e85f61;
-	font-size: 21px;
+	font-size: 22px;
+	transition: color 0.2s;
 }
 
 .on-map__link:hover::before {
