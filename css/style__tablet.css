@@ -1,7 +1,15 @@
 @media screen and (min-width: 768px) and (max-width: 989px) {
-	.container {
+.container {
 	width: 100%;
 	max-width: 730px;
+}
+
+.on-map__content {
+	height: 80vh;
+}
+
+.yandex-map-settings {
+	height: 50vh;
 }
 
 .container-content {
@@ -40,4 +48,7 @@
 	margin-left: 35px;
 }
 
+.main-btn__wrapper_about-me {
+	margin-top: 37px;
+	margin-bottom: 270px;
 }

@@ -42,6 +42,11 @@ ul {
 	list-style: none;
 }
 
+.yandex-map-settings {
+	height: 60vh;
+	width: 100%;
+}
+
 .visible-hidden {
 	display: none;
 }
