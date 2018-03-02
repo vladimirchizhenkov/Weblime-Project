@@ -27,19 +27,22 @@
 body {
 	font-family: 'FiraSans Regular', 'Arial', sans-serif;
 	font-weight: 400;
-	background-color: #f6f6f6;
 	color: #727272;
 	font-size: 18px;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	overflow-x: hidden;
 }
 
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.document-wrapper {
+	display: flex;
+	background-color: #f6f6f6;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 .yandex-map-settings {
