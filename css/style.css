@@ -343,18 +343,13 @@
 	padding: 25px 0 20px 0;
 	display: flex;
 	flex-grow: 1;
-	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 /* ----- Main Menu - Start - */
 
-.main-menu {
-	flex-basis: 225px;
-}
-
-.main-menu__list {
-	max-width: 222px;
+.sidebar {
+	flex-basis: 222px;
 }
 
 .main-menu__link {
@@ -397,8 +392,14 @@
 
 /* ----- Main Menu - End - */
 
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: calc(100% - 222px);
+}
+
 .main-photo {
-	flex-basis: 225px;
+	margin: 0 auto;
 }
 
 .main-photo__image {
@@ -406,7 +407,7 @@
 }
 
 .about-me {
-	flex-basis: 380px;
+	flex-basis: 390px;
 }
 
 .about-me__info {
@@ -481,6 +482,10 @@
 /* ----- Footer - End - */
 
 /* Career.html Styles */
+
+.career-picture {
+	margin: 0 auto;
+}
 
 .career-picture__box {
 	width: 220px;
@@ -616,14 +621,12 @@
 .projects-box {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 735px;
 	margin-top: 20px;
-	margin-right: -20px;
 }
 
 .project-card {
 	flex-basis: 220px;
-	margin-right: 20px;
+	margin-right: 19px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	background-color: #fff;
