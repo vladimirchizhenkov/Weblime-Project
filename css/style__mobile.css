@@ -143,27 +143,81 @@
 		margin-bottom: 13px;
 	}
 
+	.career-picture {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 17px 0 0 0;
+	}
+
+	.ladder-block__date {
+		display: none;
+	}
+
+	.ladder-block:first-child {
+		margin-top: 20px;
+	}
+
+	.ladder-box {
+		width: 300px;
+	}
+
+	.ladder-box::before {
+		display: none;
+	}
+
+	.ladder-box_active.ladder-box::after {
+		display: none;
+	}
+
+	.ladder-box:hover::after {
+		display: none;
+	}
+
+	.ladder-box__studio-name {
+		font-size: 18px;
+	}
+
+	.ladder-box__position, .ladder-box__date {
+		font-size: 16px;
+	}
+
+	.my-projects {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.my-projects_wrapper {
+		margin-left: 0px;
+		margin-top: 17px;
+	}
+
+	.projects-box {
+		flex-direction: column;
+	}
+
+	.project-card__image {
+		width: 300px;
+	}
+
+	.on-map__remote-partnership {
+		display: none;
+	}
+
+	.on-map__content {
+		width: 50vh;
+		height: auto;
+		padding: 10px;
+		min-height: auto;
+	}
+
+	.on-map__close {
+		top: 10px;
+		right: 60px;
+		font-size: 50px;
+	}
+	.yandex-map-settings {
+		width: 100%;
+	}
 }
-
-/*
-
-Добавил в глобал стили
-
-.on-map__link::before {
-	font-family: 'FontAwesome';
-	content: '\f041';
-	color: #33c1e3;
-	display: block;
-	font-size: 22px;
-	transition: color 0.2s;
-	width: 40px;
-	line-height: 40px;
-	height: 40px;
-	border: 2px solid #e85f61;
-	border-radius: 50%;
-	text-align: center;
-}
-
-.on-map__link:hover::before {
-	color: #e85f61;
-}*/
