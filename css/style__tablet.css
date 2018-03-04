@@ -1,4 +1,4 @@
-	@media screen and (min-width: 768px) and (max-width: 989px) {
+@media screen and (min-width: 768px) and (max-width: 989px) {
 	.container {
 		max-width: 730px;
 	}
@@ -39,7 +39,7 @@
 	}
 
 	.main-menu__link_active {
-	    border: none;
+		border: none;
 	}
 
 	.main-content {
@@ -64,6 +64,23 @@
 		margin: 0;
 	}
 
+	.my-career {
+		margin-left: auto;
+	}
+
+	.ladder-block__date {
+		font-size: 14px;
+	}
+
+	.ladder-block__date::before {
+		left: 42px;
+	}
+
+	.ladder-box {
+		width: 355px;
+	}
+
 	.my-projects_wrapper {
 		margin-left: 0;
 	}
+}
