@@ -194,8 +194,8 @@
 
 .my_contacts__title:hover::after {
 	transform: scaleX(1);
-  	transform-origin: bottom left;
-  	border-bottom: 2px dotted  #e85f61;
+	transform-origin: bottom left;
+	border-bottom: 2px dotted  #e85f61;
 }
 
 .my_contacts__title:hover .contacts__list {
@@ -442,6 +442,7 @@
 	line-height: 26px;
 	max-height: 280px;
 	overflow-y: scroll;
+	position: relative;
 }
 
 .main-btn__wrapper_about-me {
