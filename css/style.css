@@ -20,6 +20,10 @@
 }
 
 .author-card__photo {
+	width: 144px;
+}
+
+.author-card__image {
 	border-radius: 50%;
 	border: 2px solid #bebebe;
 	position: absolute;
@@ -34,9 +38,15 @@
 	font-size: 21px;
 	line-height: 28px;
 	color: #414141;
+	display: flex;
 }
 
-.author-card__low-box {
+.author-card__text {
+	margin: 0 auto;
+	padding: 0 15%;
+}
+
+.author-card__entrance {
 	background-color: #33c1e3;
 	padding: 20px 0;
 	border-bottom-right-radius: 10px;
@@ -252,6 +262,7 @@
 }
 
 .contacts__link:hover {
+	font-family: 'FiraSans Regular';
 	color: #e85f61;
 }
 

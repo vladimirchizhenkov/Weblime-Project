@@ -206,18 +206,19 @@
 	}
 
 	.on-map__content {
-		width: 50vh;
-		height: auto;
+		width: 85vw;
+		height: 85vh;
 		padding: 10px;
-		min-height: auto;
+		overflow: hidden;
 	}
 
 	.on-map__close {
-		top: 10px;
-		right: 60px;
+		top: 35px;
+		right: 20px;
 		font-size: 50px;
 	}
 	.yandex-map-settings {
-		width: 100%;
+		width: 85vw;
+		height: 85vh;
 	}
 }
