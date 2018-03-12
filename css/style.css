@@ -213,6 +213,37 @@
 	visibility: visible;
 }
 
+.my-contacts-hidden {
+	position: relative;
+	display: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.my-contacts-hidden__list {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 20px;
+    width: 300px;
+    top: 52px;
+    left: -260px;
+    padding: 7px 10px 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    transition: opacity 0.2s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.my-contacts-hidden__list_visible {
+	opacity: 1;
+	visibility: visible;
+}
+
 .contacts__list {
 	visibility: hidden;
 	opacity: 0;

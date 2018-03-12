@@ -28,10 +28,7 @@
 	}
 
 	.my-contacts-hidden {
-		width: 40px;
-		height: 40px;
-		position: relative;
-		cursor: pointer;
+		display: block;
 	}
 
 	.my-contacts-hidden::before {
