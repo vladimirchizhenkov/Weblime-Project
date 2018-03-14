@@ -218,4 +218,50 @@
 		width: 85vw;
 		height: 85vh;
 	}
+
+	.feedback__block-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.feedback__content {
+		border-radius: 10px;
+		width: 85vw;
+		padding: 30px 0;
+	}
+
+	.hidden-feedback__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: #fff;
+		transition: color, transform 0.2s;
+		font-size: 50px;
+		cursor: pointer;
+	}
+
+	.hidden-feedback__close:hover {
+		color: #e85f61;
+		transform: scale(1.2);
+	}
+
+	.feedback__image {
+		width: 75px;
+	}
+
+	.feedback__title {
+		font-size: 18px;
+	}
+
+	.feedback-form__input, .feedback-form__textarea {
+		line-height: 18px;
+		border-radius: 5px;
+		padding: 5px 10px;
+		min-width: 200px;
+	}
+
+	.feedback-form__input_submit {
+		padding: 10px 15px
 }
