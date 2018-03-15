@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weblime Project: Portfolio</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+</head>
+<body>
+	<div class="document-wrapper">
+		<div id="page-preloader" class="preloader">
+			<div class="loader"></div>
+		</div>
+		<header class="main-header container-wide">
+			<div class="main-header__wrapper container">
+				<a href="index.html" class="author-link"><div class="author-title">
+					<img src="img/author-card__photo.jpg" alt="Author Photo" class="author-title__photo">
+					<span class="author-title__name">Анатолий Анатольев</span>
+				</div>
+			</a>
+			<div class="on-map on-map_wrapper">
+				<span id="on-map__link" class="on-map__link"></span>
+				<div class="on-map__window" id="on-map__window">
+					<div class="on-map__content">
+						<span class="on-map__close" id="on-map__close">&times;</span>
+						<p class="on-map__remote-partnership">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo ex vel animi reprehenderit deserunt reiciendis autem voluptatum mollitia, possimus vitae dolorem molestias officia corporis iusto, magni minima fugiat commodi. Similique consequuntur suscipit repellat sunt magnam corrupti praesentium possimus laboriosam commodi, beatae nam eos perferendis at iure velit aliquid nihil.</p>
+						<div class="on-map__current-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2f9a0cb7e0fc28a83e5f840c5aec125041a7cd90895f92f442e52ea31a349d8&amp;source=constructor" class="yandex-map-settings" frameborder="0"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div class="my-contacts">
+				<div class="my-contacts-hidden">
+					<ul class="my-contacts-hidden__list">
+						<li class="contacts__point">
+							<a href="mailto:anatoly@mail.ru?subject=сотрудничество" class="contacts__link contacts__link_email">anatoly@mail.ru</a>
+						</li>
+						<li class="contacts__point">
+							<a href="tel:+79873456212" class="contacts__link contacts__link_tel">+7 987 345 62 12</a>
+						</li>
+						<li class="contacts__point">
+							<a href="skype:anatoly_" class="contacts__link contacts__link_skype">anatoly_</a>
+						</li>
+						<li class="contacts__point">
+							<div class="feedback feedback_wrapper">
+								<button type="button" class="feedback__button" value="Напишите мне" id="hidden-feedback__button">Напишите мне
+								</button>
+								<div class="feedback__window" id="hidden-feedback__window">
+									<div class="feedback__content">
+										<span class="hidden-feedback__close" id="hidden-feedback__close">
+											&times;
+										</span>
+										<div class="feedback__block-wrapper">
+											<img src="img/form_title.png" alt="form image" class="feedback__image">
+											<div class="feedback__title">Давайте сотрудничать!
+											</div>
+											<form action="#" class="feedback-form" method="post">
+												<input type="text" class="feedback-form__input" placeholder="Ваше имя">
+												<div class="feedback-form__validation">Введите корректные данные</div>
+												<input type="text" class="feedback-form__input"  placeholder="Ваш телефон">
+												<div class="feedback-form__validation">Введите корректные данные</div>
+												<textarea class="feedback-form__textarea" rows="5" placeholder="Ваш текст"></textarea>
+												<input type="submit" class="feedback-form__input feedback-form__input_submit" value="Отправить заявку">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="my_contacts__title">
+					Мои контакты
+					<ul class="contacts__list">
+						<li class="contacts__point">
+							<a href="mailto:anatoly@mail.ru?subject=сотрудничество" class="contacts__link contacts__link_email">anatoly@mail.ru</a>
+						</li>
+						<li class="contacts__point">
+							<a href="tel:+79873456212" class="contacts__link contacts__link_tel">+7 987 345 62 12</a>
+						</li>
+						<li class="contacts__point">
+							<a href="skype:anatoly_" class="contacts__link contacts__link_skype">anatoly_</a>
+						</li>
+						<li class="contacts__point">
+							<div class="feedback feedback_wrapper">
+								<button type="button" class="feedback__button" value="Напишите мне" id="feedback__button">Напишите мне
+								</button>
+								<div class="feedback__window" id="feedback__window">
+									<div class="feedback__content">
+										<span class="feedback__close" id="feedback__close">
+											&times;
+										</span>
+										<div class="feedback__block-wrapper">
+											<img src="img/form_title.png" alt="form image" class="feedback__image">
+											<div class="feedback__title">Давайте сотрудничать!
+											</div>
+											<form action="#" class="feedback-form" method="post">
+												<input type="text" class="feedback-form__input" placeholder="Ваше имя">
+												<div class="feedback-form__validation">Введите корректные данные</div>
+												<input type="text" class="feedback-form__input"  placeholder="Ваш телефон">
+												<div class="feedback-form__validation">Введите корректные данные</div>
+												<textarea class="feedback-form__textarea" rows="5" placeholder="Ваш текст"></textarea>
+												<input type="submit" class="feedback-form__input feedback-form__input_submit" value="Отправить заявку">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<section class="container-content container">
+		<aside class="sidebar">
+			<nav class="main-menu wow fadeInLeft" data-wow-delay="1.2s">
+				<ul class="main-menu__list">
+					<li class="main-menu__point"><a href="about_me.html" class="main-menu__link main-menu__link_about-me">Обо мне</a></li>
+					<li class="main-menu__point"><a href="career.html" class="main-menu__link main-menu__link_career">Карьерный путь</a></li>
+					<li class="main-menu__point"><a href="portfolio.html" class="main-menu__link main-menu__link_portfolio main-menu__link_active">Портфолио</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="main-content">
+			<article class="my-projects my-projects_wrapper wow fadeIn" data-wow-delay="1.2s">
+				<h2 class="main-title">Портфолио</h2>
+				<div class="projects-box">
+					<div class="project-card">
+						<img src="img/portfolio__deals-app.jpg" alt="Project deals-app" class="project-card__image">
+						<div class="project-card_inner-box">
+							<a href="#" class="project-card__link">Deals App</a>
+							<div class="project-card__title">Продажа одежды</div>
+							<div class="project-card__description project-card__description_type-app">Приложение</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<img src="img/portfolio__dream-scapes.jpg" alt="Project Dream Scapes" class="project-card__image">
+						<div class="project-card_inner-box">
+							<a href="#" class="project-card__link">Dream Scapes</a>
+							<div class="project-card__title">Лагуна Люфтганза</div>
+							<div class="project-card__description project-card__description_type-site">Лендинг</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<img src="img/portfolio__creative-studio.jpg" alt="Project Creative Studio" class="project-card__image">
+						<div class="project-card_inner-box">
+							<a href="#" class="project-card__link">Creative Studio</a>
+							<div class="project-card__title">Танцевальная студия</div>
+							<div class="project-card__description project-card__description_type-site">Корпоративный сайт</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<img src="img/portfolio__studio-frog.jpg" alt="Project Frog Studio" class="project-card__image">
+						<div class="project-card_inner-box">
+							<a href="#" class="project-card__link">Studio Frog</a>
+							<div class="project-card__title">Мебельный магазин</div>
+							<div class="project-card__description project-card__description_type-site">Лендинг</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<img src="img/portfolio__carbonara.jpg" alt="Project Carbonara" class="project-card__image">
+						<div class="project-card_inner-box">
+							<a href="#" class="project-card__link">Carbonara</a>
+							<div class="project-card__title">Итальянский ресторан</div>
+							<div class="project-card__description project-card__description_type-site">Лендинг</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+</section>
+<footer class="main-footer container-wide">
+	<div class="main-footer__wrapper container">
+		<div class="confidentiality"><span class="confidentiality__span">&#169; </span>Конфиденциальность сайта</div>
+		<div class="social">
+			<ul class="social__list">
+				<li class="social__point"><a href="#" class="social__link social__link_fb"><span class="social__link-hidden">fb</a></li><li class="social__point"><a href="#" class="social__link social__link_vk"><span class="social__link-hidden">vk</a></li><li class="social__point"><a href="#" class="social__link social__link_tw"><span class="social__link-hidden">tw</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/preloader.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/nicescroll__settings.js"></script>
+	<script type="text/javascript" src="js/jquery__page-function.js"></script>
+	<script type="text/javascript" src="js/modal-window.js"></script>
+</div>
+</body>
+</html>

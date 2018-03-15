@@ -1,0 +1,86 @@
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	.container {
+		max-width: 730px;
+	}
+
+	.on-map__content {
+		height: 80vh;
+	}
+
+	.yandex-map-settings {
+		height: 50vh;
+	}
+
+	.contacts__list {
+		left: -70px;
+	}
+
+	.container-content {
+		padding: 15px 0 140px 0;
+		justify-content: flex-start;
+	}
+
+	.sidebar {
+		flex-basis: 100%;
+		margin-bottom: 32px;
+	}
+
+	.main-menu__list {
+		display: flex;
+		max-width: 100%;
+	}
+
+	.main-menu__point {
+		margin-right: 30px;
+	}
+
+	.main-menu__link {
+		padding-right: 0;
+	}
+
+	.main-menu__link_active {
+		border: none;
+	}
+
+	.main-content {
+		flex-basis: 100%;
+	}
+
+	.main-photo {
+		margin: 0;
+		flex-basis: 250px;
+	}
+
+	.main-photo__image {
+		width: 170px;
+		margin-left: 35px;
+	}
+
+	.main-btn__wrapper_about-me {
+		margin-top: 37px;
+	}
+
+	.career-picture {
+		margin: 0;
+	}
+
+	.my-career {
+		margin-left: auto;
+	}
+
+	.ladder-block__date {
+		font-size: 14px;
+	}
+
+	.ladder-block__date::before {
+		left: 42px;
+	}
+
+	.ladder-box {
+		width: 355px;
+	}
+
+	.my-projects_wrapper {
+		margin-left: 0;
+	}
+}
