@@ -1,0 +1,33 @@
+extends ../page/main
+
+block title
+	| Карьера
+
+block content
+	.career-picture.wow.fadeInLeft(data-wow-delay="1.2s")
+		h2.main-title
+			| Карьерный путь
+		.career-picture__box.career-picture__box_wrapper
+	ul(data-wow-delay="1.2s").my-career.wow.fadeIn
+		li.ladder-block
+			.ladder-block__date.ladder-block__date_active
+				| 2016
+			.ladder-box.ladder-box_active
+				+ladder-box()
+		li.ladder-block
+			.ladder-block__date
+				| 2015
+			.ladder-box
+				+ladder-box()
+		li.ladder-block
+			.ladder-block__date
+				| 2013
+			.ladder-box
+				+ladder-box()
+		li.ladder-block
+			.ladder-block__date
+				| 2012
+			.ladder-box
+				+ladder-box()
+
+

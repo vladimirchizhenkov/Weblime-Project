@@ -1,0 +1,26 @@
+header.main-header.container-wide
+				.main-header__wrapper.container
+					a(href="index.html").author-link
+						.author-title
+							img(src="img/author-card__photo.jpg", alt="Author Photo").author-title__photo
+							span.author-title__name 
+								| Анатолий Анатольев
+					.on-map.on-map_wrapper
+						span.on-map__link#on-map__link
+						.on-map__window#on-map__window
+							.on-map__content
+								span.on-map__close#on-map__close &times;
+								p.on-map__remote-partnership
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo ex vel animi reprehenderit deserunt reiciendis autem voluptatum mollitia, possimus vitae dolorem molestias officia corporis iusto, magni minima fugiat commodi. Similique consequuntur suscipit repellat sunt magnam corrupti praesentium possimus laboriosam commodi, beatae nam eos perferendis at iure velit aliquid nihil.
+								.on-map__current-map
+									iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2f9a0cb7e0fc28a83e5f840c5aec125041a7cd90895f92f442e52ea31a349d8&amp;source=constructor", frameborder="0").yandex-map-settings
+					.my-contacts
+						.my-contacts-hidden
+							ul.my-contacts-hidden__list
+								include common/list-item
+						.my_contacts__title
+							| Мои контакты
+							ul.contacts__list
+								include common/list-item
+
+

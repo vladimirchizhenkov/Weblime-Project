@@ -1,0 +1,15 @@
+extends ../pages/main-tamplate
+
+block title 
+	| Обо мне
+
+block content
+	.main-photo.wow.fadeInLeft(data-wow-delay="1.2s")
+		img(src="img/about-me__main-photo.jpg", alt="main author photo").main-photo__image
+	article(data-wow-delay="1.2s").about-me.wow.fadeIn
+		h2.main-title
+			| Обо мне
+		p.about-me__info#nicescrollBox
+			| Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
+		a(href="#").main-btn.main-btn_red.main-btn__wrapper_about-me
+			| Скачать резюме

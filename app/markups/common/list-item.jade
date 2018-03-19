@@ -1,0 +1,29 @@
+li.contacts__point
+	a(href="mailto:anatoly@mail.ru?subject=сотрудничество").contacts__link.contacts__link_email
+		| anatoly@mail.ru
+li.contacts__point
+	a(href="tel:+79873456212").contacts__link.contacts__link_tel
+		| +7 987 345 62 12
+li.contacts__point
+	a(href="skype:anatoly_").contacts__link.contacts__link_skype
+		| anatoly_
+li.contacts__point
+	.feedback.feedback_wrapper
+		button(type="button", value="Напишите мне").feedback__button#hidden-feedback__button
+			| Напишите мне
+		.feedback__window#hidden-feedback__window
+			.feedback__content
+				span.hidden-feedback__close#hidden-feedback__close
+					| &times;
+				.feedback__block-wrapper
+					img(alt="form image").feedback__image
+					.feedback__title
+						| Давайте сотрудничать!
+					form(action="#", method="post").feedback-form
+						input(type="text", placeholder="Ваше имя").feedback-form__input
+						.feedback-form__validation
+							| Введите корректные данные
+						input(type="text", placeholder="Ваш телефон").feedback-form__input
+							| Введите корректные данные
+						textarea(rows="5", placeholder="Ваш текст").feedback-form__textarea
+						input(type="submit", value="Отправить заявку").feedback-form__input.feedback-form__input_submit
