@@ -1,21 +1,26 @@
-var gulp        = require ('gulp'),
-	sass        = require ('gulp-sass'),
-	browserSync = require ('browser-sync'),
-	concat      = require ('gulp-concat'),
-	uglify      = require ('gulp-uglifyjs'),
-	cssnano     = require ('gulp-cssnano'),
-	rename      = require ('gulp-rename'),
-	del         = require ('del');
+var gulp         = require ('gulp'),
+	sass         = require ('gulp-sass'),
+	browserSync  = require ('browser-sync'),
+	concat       = require ('gulp-concat'),
+	uglify       = require ('gulp-uglifyjs'),
+	cssnano      = require ('gulp-cssnano'),
+	rename       = require ('gulp-rename'),
+	autoprefixer = require ('gulp-autoprefixer'),
+	del          = require ('del'),
+	imagemin     = require ('gulp-imagemin'),
+	pngquant     = require ('imagemin-pngquant'),
+	cache        = require ('gulp-cache');
 
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.scss') //*.+(scss|sass)
 	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['app/libs/jquery.min.js', 'app/libs/...min.js'])
+	return gulp.src(['app/libs/jquery.nicescroll.min.js', 'app/libs/wow.min.js'])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
@@ -28,9 +33,20 @@ gulp.task('css-libs', ['sass'], function() {
 	.pipe(gulp.dest('app/css'));
 });
 
-gulp.task('build', ['clean', 'sass', 'scripts'], function() {
+gulp.task('img', function () {
+	return gulp.src('app/img/**/*')
+	.pipe(cache(imagemin({
+		interlaced: true,
+		progressive: true,
+		svgoPlugins: [{removeViewBox: false}],
+		use: [pngquant()]
+	})))
+	.pipe(gulp.dest('dist/img')); 
+});
+
+gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss   = gulp.src(['app/css/main.css', 'app/css/libs.min.css'])
-				   .pipe(gulp.dest('app/dist'));
+				   .pipe(gulp.dest('dist/css'));
 	var buildFonts = gulp.src('app/fonts/**/*')
 				   .pipe(gulp.dest('dist/fonts'));
 	var buildJs    = gulp.src('app/js/**/*')
@@ -51,6 +67,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('clean', function() {
 	return del.sync('dist');
+});
+
+gulp.task('clean-cache', function() {
+	return cache.clearAll();
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function (){ //bs и sass выполняются до watch
