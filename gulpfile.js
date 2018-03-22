@@ -45,14 +45,14 @@ gulp.task('img', function () {
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
-	var buildCss   = gulp.src(['app/css/main.css', 'app/css/libs.min.css'])
-				   .pipe(gulp.dest('dist/css'));
-	var buildFonts = gulp.src('app/fonts/**/*')
-				   .pipe(gulp.dest('dist/fonts'));
-	var buildJs    = gulp.src('app/js/**/*')
-				   .pipe(gulp.dest('dist/js'));
-	var buildHtml  = gulp.src('app/*.html')
-				   .pipe(gulp.dest('dist/'));
+	var buildCss      =	gulp.src(['app/css/main.css', 'app/css/libs.min.css'])
+				    		.pipe(gulp.dest('dist/css'));
+	var buildFonts    = gulp.src('app/fonts/**/*')
+				    		.pipe(gulp.dest('dist/fonts'));
+	var buildJs       = gulp.src('app/js/**/*')
+				    		.pipe(gulp.dest('dist/js'));                  	
+	var buildHtml     = gulp.src('app/*.html')
+				    		.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('browser-sync', function() {
@@ -60,8 +60,8 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'app'
 		},
-		browser: 'chrome',
-		notify: false
+			browser: 'chrome',
+			notify: false
 	});
 });
 
@@ -87,3 +87,10 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function (){ //bs и
 //для css-библиотек: создать в sass libs.sass, туда импортировать библиотеки
 //nanocss и rename для сжатия и переименования
 //del для чистки проекта
+
+// var buildCommonJs = gulp.src(['app/js/preloader.js', 'app/js/common-js/modal-window.js'])
+// 	                    	.pipe(concat(('common-js.js'))
+// 	                    	.pipe(gulp.dest('dist/js'));
+// 	var buildCommonJq = gulp.src(['app/js/jquery__page-function.js', 'app/js/nicescroll__settings.js', 'app/js/'])
+// 							.pipe(concat(('common-jq.js'))
+// 							.pipe(gulp.dest('dist/js'));
