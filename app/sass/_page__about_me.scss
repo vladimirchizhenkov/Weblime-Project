@@ -1,0 +1,25 @@
+.main-photo {
+	margin: 0 auto;
+}
+
+.main-photo__image {
+	border-radius: 50%;
+}
+
+.about-me {
+	flex-basis: 390px;
+}
+
+.about-me__info {
+	font-weight: 300;
+	line-height: 26px;
+	max-height: 280px;
+	overflow-y: scroll;
+	position: relative;
+}
+
+.main-btn__wrapper_about-me {
+	float: right;
+	margin-top: 17px;
+	margin-bottom: 85px;
+}

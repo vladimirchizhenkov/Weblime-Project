@@ -1,0 +1,71 @@
+.my-projects {
+	margin-bottom: -20px;
+}
+
+.my-projects_wrapper {
+	margin-left: 20px;
+}
+
+.projects-box {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.project-card {
+	flex-basis: 220px;
+	margin-right: 19px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-card__image {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.project-card_inner-box {
+	padding: 12px 0 17px 20px;
+	font-size: 14px;
+}
+
+.project-card__link {
+	display: block;
+	text-decoration: none;
+	font-size: 21px;
+	color: #33c1e3;
+	transition: color 0.2s;
+}
+
+.project-card__link:hover {
+	color: #e85f61;
+}
+
+.project-card__title {
+	font-weight: 300;
+	font-size: 14px;
+	color: #414141;
+	margin-top: 3px;
+	margin-bottom: 12px;
+}
+
+.project-card__description {
+	font-weight: 700;
+	color: #aeaeae;
+}
+
+.project-card__description_type-app::before {
+	font-family: $icon-font;
+	content: '\f10a';
+	font-size: 18px;
+	margin-right: 5px;
+}
+
+.project-card__description_type-site::before {
+	font-family: $icon-font;
+	content: '\f108';
+	font-size: 18px;
+	margin-right: 5px;
+}

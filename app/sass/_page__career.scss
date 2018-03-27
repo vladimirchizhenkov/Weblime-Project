@@ -1,0 +1,125 @@
+.career-picture {
+	margin: 0 auto;
+}
+
+.career-picture__box {
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+	background-image: url('../img/career__image.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.career-picture__box_wrapper {
+	margin-top: 23px;
+}
+
+.my-career .ladder-block:last-child .ladder-block__date::before {
+	display: none;
+}
+
+.ladder-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.ladder-block:first-child {
+	margin-top: 65px;
+}
+
+.ladder-block:last-child {
+	margin-bottom: 0px;
+}
+
+.ladder-block__date {
+	font-weight: 300;
+	position: relative;
+	margin-right: 35px;
+	margin-left: -30px;
+}
+
+.ladder-block__date::before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 1px;
+	background-color: #ddd;
+	height: 110px;
+	top: 20px;
+	left: 52px;
+}
+
+.ladder-block__date_active {
+	font-weight: 700;
+	color: #33c1e3;
+}
+
+.ladder-box {
+	position: relative;
+	background-color: #fff;
+	cursor: pointer;
+	width: 380px;
+	padding: 20px 0px 17px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	transition: background-color, color 0.2s;
+}
+
+.ladder-box_active.ladder-box::after {
+	top: calc(50% - 10px);
+	left: -32px;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(51, 193, 227, 0.5);
+}
+
+.ladder-box:hover {
+	background-color: #33c1e3;
+	color: #fff;
+}
+
+.ladder-box::before {
+	top: calc(50% - 5px);
+	left: -27px;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #33c1e3;
+}
+
+.ladder-box:hover::after {
+	top: calc(50% - 10px);
+	left: -32px;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(51, 193, 227, 0.5);
+}
+
+.ladder-box__studio-name {
+	font-size: 21px;
+}
+
+.ladder-box__position, .ladder-box__date {
+	font-weight: 300;
+	margin-top: 4px;
+}
+
+.ladder-box_active {
+	background-color: #33c1e3;
+	color: #fff;
+}

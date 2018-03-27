@@ -1,0 +1,41 @@
+.sidebar {
+	flex-basis: 222px;
+}
+
+.main-menu__link {
+	text-align: right;
+	display: block;
+	line-height: 45px;
+	color: #414141;
+	text-decoration: none;
+	padding-right: 25px;
+	transition: color 0.2s;
+}
+
+.main-menu__link:hover {
+	color: #33c1e3;
+}
+
+.main-menu__link_active {
+	border-right: 6px solid #32c4e6;
+	color: #33c1e3;
+	font-weight: 700;
+}
+
+.main-menu__link_about-me::before {
+	font-family: 'FontAwesome';
+	content: '\f21b';
+	padding-right: 10px;
+}
+
+.main-menu__link_career::before {
+	font-family: 'FontAwesome';
+	content: '\f135';
+	padding-right: 10px;
+}
+
+.main-menu__link_portfolio::before {
+	font-family: 'FontAwesome';
+	content: '\f0b1';
+	padding-right: 10px;
+}
