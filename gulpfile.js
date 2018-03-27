@@ -87,10 +87,3 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function (){ //bs и
 //для css-библиотек: создать в sass libs.sass, туда импортировать библиотеки
 //nanocss и rename для сжатия и переименования
 //del для чистки проекта
-
-// var buildCommonJs = gulp.src(['app/js/preloader.js', 'app/js/common-js/modal-window.js'])
-// 	                    	.pipe(concat(('common-js.js'))
-// 	                    	.pipe(gulp.dest('dist/js'));
-// 	var buildCommonJq = gulp.src(['app/js/jquery__page-function.js', 'app/js/nicescroll__settings.js', 'app/js/'])
-// 							.pipe(concat(('common-jq.js'))
-// 							.pipe(gulp.dest('dist/js'));

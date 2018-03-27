@@ -32,7 +32,7 @@
 	}
 
 	.my-contacts-hidden::before {
-		font-family: 'FontAwesome';
+		font-family: $icon-font;
 		content: '\f095';
 		font-size: 40px;
 		color: #33c1e3;
@@ -70,7 +70,7 @@
 	}
 
 	.main-menu__point {
-		margin-right: 20px;
+		margin-right: 18px;
 	}
 
 	.main-menu__link {
