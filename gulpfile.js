@@ -55,6 +55,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 				    		.pipe(gulp.dest('dist/'));
 	var buildFavIco   = gulp.src('app/favicons/**/*')
 							.pipe(gulp.dest('dist/favicons'));
+	var buildDocs     = gulp.src('app/docs/**/*')
+							.pipe(gulp.dest('dist/docs'))
 });
 
 gulp.task('browser-sync', function() {

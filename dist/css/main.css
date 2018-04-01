@@ -899,6 +899,7 @@ ul {
   margin-top: 20px; }
 
 .project-card {
+  cursor: pointer;
   -webkit-flex-basis: 220px;
       -ms-flex-preferred-size: 220px;
           flex-basis: 220px;
@@ -908,7 +909,16 @@ ul {
           border-radius: 10px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); }
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  -o-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s; }
+
+.project-card:hover {
+  -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.2); }
 
 .project-card__image {
   -webkit-border-top-right-radius: 10px;
