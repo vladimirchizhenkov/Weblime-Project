@@ -53,6 +53,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 				    		.pipe(gulp.dest('dist/js'));                  	
 	var buildHtml     = gulp.src('app/*.html')
 				    		.pipe(gulp.dest('dist/'));
+	var buildFavIco   = gulp.src('app/favicons/**/*')
+							.pipe(gulp.dest('dist/favicons'));
 });
 
 gulp.task('browser-sync', function() {
