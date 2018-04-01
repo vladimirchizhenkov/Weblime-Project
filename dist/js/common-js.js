@@ -41,7 +41,7 @@ document.body.onload = function() {
  	hidden_modal_contacts.style.display = "block";
  }
  hidden_span_contacts.onclick = function () {
- 	hidden_modal_contacts.display = "none";
+ 	hidden_modal_contacts.style.display = "none";
  }
 
  window.onclick = function(event) {

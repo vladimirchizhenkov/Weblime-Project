@@ -25,7 +25,8 @@ ul {
 
 .yandex-map-settings {
   height: 60vh;
-  width: 100%; }
+  width: 100%;
+  border: none; }
 
 .visible-hidden {
   display: none; }
@@ -1021,8 +1022,7 @@ ul {
     padding-left: 10px;
     padding-right: 10px; }
   .container-wide {
-    width: 100%;
-    padding: none; }
+    width: 100%; }
   .author-link {
     -webkit-flex-basis: 150px;
         -ms-flex-preferred-size: 150px;
@@ -1122,7 +1122,8 @@ ul {
   .main-title {
     margin: 0; }
   .about-me__info {
-    font-size: 16px; }
+    font-size: 16px;
+    max-height: none; }
   .main-btn__wrapper_about-me {
     float: none;
     margin-top: 17px;

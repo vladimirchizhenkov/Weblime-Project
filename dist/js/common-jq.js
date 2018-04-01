@@ -15,8 +15,10 @@ $("#nicescrollBox").niceScroll({
 
 // 'Header. my contacts'. Mobile dropbox function;
 
-$(".my-contacts-hidden").click(function() {
-	$(".my-contacts-hidden__list").toggleClass("my-contacts-hidden__list_visible")
+$(".my-contacts-hidden").click(function(event) {
+  if ($(event.target).hasClass('my-contacts-hidden')) {
+    $(".my-contacts-hidden__list").toggleClass("my-contacts-hidden__list_visible")
+  }
 });
 
 //'Career' Ladder-box click function;

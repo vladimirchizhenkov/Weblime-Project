@@ -9,7 +9,6 @@
 
 	.container-wide {
 		width: 100%;
-		padding: none;
 	}
 
 	.author-link {
@@ -118,6 +117,7 @@
 
 	.about-me__info {
 		font-size: 16px;
+		max-height: none;
 	}
 
 	.main-btn__wrapper_about-me {

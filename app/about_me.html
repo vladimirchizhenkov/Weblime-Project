@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<meta content="telephone=no" name="format-detection">
 	<title>Weblime Project: About me</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/libs.min.css">
@@ -30,7 +32,7 @@
 						<div class="on-map__content">
 							<span class="on-map__close" id="on-map__close">&times;</span>
 							<p class="on-map__remote-partnership">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo ex vel animi reprehenderit deserunt reiciendis autem voluptatum mollitia, possimus vitae dolorem molestias officia corporis iusto, magni minima fugiat commodi. Similique consequuntur suscipit repellat sunt magnam corrupti praesentium possimus laboriosam commodi, beatae nam eos perferendis at iure velit aliquid nihil.</p>
-							<div class="on-map__current-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2f9a0cb7e0fc28a83e5f840c5aec125041a7cd90895f92f442e52ea31a349d8&amp;source=constructor" class="yandex-map-settings" frameborder="0"></iframe></div>
+							<div class="on-map__current-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2f9a0cb7e0fc28a83e5f840c5aec125041a7cd90895f92f442e52ea31a349d8&amp;source=constructor" class="yandex-map-settings"></iframe></div>
 						</div>
 					</div>
 				</div>
@@ -45,7 +47,7 @@
 							</li>
 							<li class="contacts__point">
 								<a href="skype:anatoly_" class="contacts__link contacts__link_skype">anatoly_</a>
-							</li>
+							</li> 
 							<li class="contacts__point">
 								<div class="feedback feedback_wrapper">
 									<button type="button" class="feedback__button" value="Напишите мне" id="hidden-feedback__button">Напишите мне
@@ -127,32 +129,32 @@
 					</ul>
 				</nav>
 			</aside>
-			<main class="main-content">
+			<div class="main-content">
 				<div class="main-photo wow fadeInLeft" data-wow-delay="1.2s">
 					<img class="main-photo__image" src="img/about-me__main-photo.jpg" alt="main author photo">
 				</div>
-				<article class="about-me wow fadeIn" data-wow-delay="1.2s">
-					<h2 class="main-title">Обо мне</h2>
+				<div class="about-me wow fadeIn" data-wow-delay="1.2s">
+					<h1 class="main-title">Обо мне</h1>
 					<p id="nicescrollBox" class="about-me__info">Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.</p>
 					<a href="#" class="main-btn main-btn_red main-btn__wrapper_about-me">Скачать резюме</a>
-				</article>
-			</main>
+				</div>
+			</div>
 		</section>
 		<footer class="main-footer container-wide">
 			<div class="main-footer__wrapper container">
 				<div class="confidentiality"><span class="confidentiality__span">&#169; </span>Конфиденциальность сайта</div>
 				<div class="social">
 					<ul class="social__list">
-						<li class="social__point"><a href="#" class="social__link social__link_fb"><span class="social__link-hidden">fb</a></li><li class="social__point"><a href="#" class="social__link social__link_vk"><span class="social__link-hidden">vk</a></li><li class="social__point"><a href="#" class="social__link social__link_tw"><span class="social__link-hidden">tw</a></li>
-						</ul>
-					</div>
+						<li class="social__point"><a href="#" class="social__link social__link_fb"><span class="social__link-hidden">fb</span></a></li><li class="social__point"><a href="#" class="social__link social__link_vk"><span class="social__link-hidden">vk</span></a></li><li class="social__point"><a href="#" class="social__link social__link_tw"><span class="social__link-hidden">tw</span></a></li>
+					</ul>
 				</div>
-			</footer>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script type="text/javascript" src="js/libs.min.js"></script>
-			<script>new WOW().init();</script>
-			<script type="text/javascript" src="js/common-js.js"></script>
-			<script type="text/javascript" src="js/common-jq.js"></script>
-		</div>
-	</body>
-	</html>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script>new WOW().init();</script>
+		<script src="js/common-js.js"></script>
+		<script src="js/common-jq.js"></script>
+	</div>
+</body>
+</html>
